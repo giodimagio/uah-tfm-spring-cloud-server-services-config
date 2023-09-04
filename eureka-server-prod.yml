@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: # To be defined
   client:
     registerWithEureka: false
     serviceUrl:
