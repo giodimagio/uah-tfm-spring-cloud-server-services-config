@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://uah-tfm-eureka-server-service:8762/eureka
+      defaultZone: http://eureka-server-svc:8764/eureka
 
 spring:
   cloud:
@@ -13,14 +13,14 @@ spring:
         locator:
           enabled: true
       routes:
-      - id: servicio-peliculas-actores
-        uri: http://uah-tfm-peliculas-actores-service:8011
+      - id: peliculas-actores-svc
+        uri: http://peliculas-actores-svc:8011
         predicates:
         - Path=/api/peliculas/**
         filters:
         - StripPrefix=2
-      - id: servicio-usuarios-criticas
-        uri: http://uah-tfm-usuarios-criticas-service:8012
+      - id: usuarios-criticas-svc
+        uri: http://usuarios-criticas-svc:8012
         predicates:
         - Path=/api/usuarios/**
         filters:
