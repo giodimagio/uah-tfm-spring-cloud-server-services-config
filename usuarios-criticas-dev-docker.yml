@@ -10,7 +10,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    url: jdbc:mysql://localhost:3306/criticasusuariosdb?useSSL=false&serverTimezone=Europe/Madrid&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://peliculas-actores-db:3306/criticasusuariosdb?useSSL=false&serverTimezone=Europe/Madrid&allowPublicKeyRetrieval=true
     password: admin
   jpa:
     generate-ddl: false
