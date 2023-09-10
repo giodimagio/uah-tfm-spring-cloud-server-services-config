@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://:8762/eureka
+      defaultZone: # To be defined
 
 spring:
   cloud:
@@ -13,13 +13,13 @@ spring:
         locator:
           enabled: true
       routes:
-      - id: servicio-peliculas-actores
+      - id: peliculas-actores
         uri: # To be defined
         predicates:
         - Path=/api/peliculas/**
         filters:
         - StripPrefix=2
-      - id: servicio-usuarios-criticas
+      - id: usuarios-criticas
         uri: # To be defined
         predicates:
         - Path=/api/usuarios/**
