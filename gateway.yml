@@ -13,14 +13,14 @@ spring:
         locator:
           enabled: true
       routes:
-      - id: servicio-peliculas-actores
-        uri: http://localhost:8011
+      - id: peliculas-actores-svc
+        uri: http://localhost:8010
         predicates:
         - Path=/api/peliculas/**
         filters:
         - StripPrefix=2
-      - id: servicio-usuarios-criticas
-        uri: http://localhost:8012
+      - id: usuarios-criticas-svc
+        uri: http://localhost:8020
         predicates:
         - Path=/api/usuarios/**
         filters:

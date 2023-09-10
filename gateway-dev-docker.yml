@@ -14,13 +14,13 @@ spring:
           enabled: true
       routes:
       - id: peliculas-actores-svc
-        uri: http://peliculas-actores-svc:8011
+        uri: http://peliculas-actores-svc:8012
         predicates:
         - Path=/api/peliculas/**
         filters:
         - StripPrefix=2
       - id: usuarios-criticas-svc
-        uri: http://usuarios-criticas-svc:8012
+        uri: http://usuarios-criticas-svc:8022
         predicates:
         - Path=/api/usuarios/**
         filters:
