@@ -1,10 +1,10 @@
 server:
-  port: 8021
+  port: 8022
 
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8763/eureka
+      defaultZone: http://eureka-server-svc:8764/eureka
 
 spring:
   datasource:
