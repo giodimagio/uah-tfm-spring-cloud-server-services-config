@@ -1,0 +1,23 @@
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+  port: 9012
+spring:
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 10MB
+gateway:
+  api:
+    peliculas:
+      url: http://localhost:8093/api/peliculas/peliculas
+    actores:
+      url: http://localhost:8093/api/peliculas/actores
+    usuarios:
+      url: http://localhost:8093/api/usuarios/usuarios
+    criticas:
+      url: http://localhost:8093/api/usuarios/criticas
+    roles:
+      url: http://localhost:8093/api/usuarios/roles
