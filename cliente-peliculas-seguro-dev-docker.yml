@@ -12,12 +12,12 @@ spring:
 gateway:
   api:
     peliculas:
-      url: http://localhost:8093/api/peliculas/peliculas
+      url: http://gateway-svc:8093/api/peliculas/peliculas
     actores:
-      url: http://localhost:8093/api/peliculas/actores
+      url: http://gateway-svc:8093/api/peliculas/actores
     usuarios:
-      url: http://localhost:8093/api/usuarios/usuarios
+      url: http://gateway-svc:8093/api/usuarios/usuarios
     criticas:
-      url: http://localhost:8093/api/usuarios/criticas
+      url: http://gateway-svc:8093/api/usuarios/criticas
     roles:
-      url: http://localhost:8093/api/usuarios/roles
+      url: http://gateway-svc:8093/api/usuarios/roles
